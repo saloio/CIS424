@@ -18,7 +18,7 @@ USE `Alumni_db` ;
 -- Table `Alumni_db`.`user_t`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Alumni_db`.`user_t` (
-  `userID` INT(11) NOT NULL,
+  `userID` INT(11) NOT NULL AUTO_INCREMENT,
   `email` VARCHAR(255) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
   `fname` VARCHAR(255) NOT NULL,
