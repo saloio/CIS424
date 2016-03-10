@@ -129,8 +129,6 @@ CREATE TABLE IF NOT EXISTS `Alumni_db`.`relationship_t` (
   `status` ENUM('0', '1', '2') NOT NULL DEFAULT '0',
   INDEX `FK_relationship_userID_two_idx` (`user_two_id` ASC),
   INDEX `FK_relationship_userID_one_idx` (`user_one_id` ASC),
-  UNIQUE INDEX `user_one_id_UNIQUE` (`user_one_id` ASC),
-  UNIQUE INDEX `user_two_id_UNIQUE` (`user_two_id` ASC),
   CONSTRAINT `FK_relationship_userID_one`
     FOREIGN KEY (`user_one_id`)
     REFERENCES `Alumni_db`.`user_t` (`userID`)
